@@ -1,0 +1,18 @@
+.header, .header_right{
+    display:flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-between;
+    height:50px;
+    align-items: center;
+}
+
+.pdf_report{
+    margin-right:40px;
+}
+
+.nav_link{
+    padding:0px 20px;
+    cursor: pointer;
+    font-weight: 400;
+}

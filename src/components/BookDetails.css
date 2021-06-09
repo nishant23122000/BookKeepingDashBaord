@@ -1,0 +1,172 @@
+.book_details_container{
+    background-color: #E5E5E5;
+    
+    padding:5px 15px;
+    height:91vh;
+}
+.book_details{
+    display: flex;
+    flex-direction: column;
+}
+.search_box{
+    width:699px;
+    height:fit-content;
+
+}
+input[type=text]{
+    border:none;
+    outline:none;
+    width:100%;
+    height:40px;
+    background: #FFFFFF;
+    border: 0.198326px solid #AB8484;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left:20px;
+}
+
+.filters_and_info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.filters{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    width: 799;
+}
+/* .filters{
+    display:flex;
+    flex-direction: column;
+} */
+
+
+.filter_options{
+    display: flex;
+    flex-direction: column;
+    padding:5px 5px;
+
+}
+
+.type_options{
+    display: flex;
+    flex: row;
+    margin:5px 0px;
+
+}
+
+.option{
+    padding:5px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: white;
+    
+    font-size: 0.8rem;
+    margin-right:5px;
+    
+}
+
+.active_option{
+    background-color: #715AFF;
+    color:#fff;
+}
+
+
+.filter_type{
+    font-size: 13px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+color: #AB8484;
+
+}
+
+.balance_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.box{
+    padding:12px;
+    background-color: #fff;
+    border: 0.3px solid #AB8484;
+}
+.box_title{
+    font-size: 20px;
+    color: rgba(171, 132, 132, 1);
+
+}
+.box_value{
+    font-size: 30px;
+    color:black;
+    margin-top: 5px;
+}
+
+.right_box{
+    display:flex;
+    flex-direction: column;
+}
+
+.right_box_top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.right_balance_info{
+    display: grid;
+    width:407px;
+    grid-template-columns: 1fr  1fr;
+}
+
+.right_box_text{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(171, 132, 132, 1);
+    margin-bottom: 10px;
+}
+
+
+
+.transactions> table{
+    width:100%;
+
+    border:none;
+    border: 0.3px solid rgba(171, 132, 132, 1);
+
+}
+.table_heading{
+    background-color: rgba(240, 240, 240, 1);
+    
+}
+
+table th{
+    padding: 10px 0px;
+    border:none;
+}
+table td{
+    background-color: #fff;
+    text-align: center;
+    border:none;
+    padding:10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
