@@ -1,0 +1,174 @@
+
+.purchase_sidebar{
+    display: flex;
+    width:550px;
+    flex-direction: column;
+    align-items: stretch;
+    padding:0px 10px;
+    .purchase_sidebar_header{
+        height:50px;
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;    
+        background-color: #FFFFFF;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 600;
+        padding-left:15px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+        .icon{
+            cursor: pointer;
+            font-size: 30px;
+        }
+        .purchase_title{
+            display: flex;
+            width:300px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+   
+    
+    .sidebar_footer{
+        position:absolute;
+        bottom:0;
+        .footer_button{
+            text-align: center;
+            color:white;
+            background: rgba(113, 90, 255, 1);
+            border-radius: 7px;
+            font-weight: 700;
+            font-size: 30px;
+            padding:10px ;
+            width: 530px;
+            cursor: pointer;
+        }
+    }
+   
+    
+    .purchase_sidebar_form{
+        padding: 10px;
+        .date_time{
+            margin-right:85px;
+            background: #FFFFFF;
+            border: 0.5px solid #AB8484;
+           
+            border-radius: 4.07735px;
+            padding:5px ;
+            color: rgba(113, 90, 255, 1);
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .purchase_sidebar_input{
+            margin:15px 0px;
+            .input_label{
+                font-size: 15px;
+                padding: 5px 0px;
+                color:rgba(171, 132, 132, 1);
+                font-weight: 400;
+            }
+            .purchase_input_box{
+                .input_element{
+                    background: #FFFFFF;
+                    padding: 10px;
+                    border: 1px solid #AB8484;
+                    border-radius: 6.79558px;
+                    font-size: 20px;
+                    font-weight: 400;
+                    width:90%;
+                   
+                    outline:none;
+                }
+            }
+           
+        }
+        .purchase_sidebar_price{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin:10px 0px;
+            .price{
+                /* padding-left:10px; */
+                width:175px;
+                height:60px;
+                margin-right:60px;
+                .input_label{
+                    color: #AB8484;
+                    padding-bottom: 5px;
+                }
+                .purchase_input_box{
+                    input{
+                        padding: 10px 5px;
+                        border-radius: 5px;
+                        border: 1px solid #AB8484;
+                    }
+                }
+            }
+            .price_unit{
+                display: flex;
+                background: #FFFFFF;
+                border: 1px solid #AB8484;
+                
+                border-radius: 6.79558px;
+                font-size: 22px;
+                font-weight: 400;
+                outline:none;
+                input{
+                    border:none;
+                    padding: 5px;
+                    border-radius: 6.79558px;
+                    font-size: 22px;
+                    font-weight: 400;
+                    
+                }
+                .unit_button{
+                    justify-content: center;
+                    
+                    text-align: center;
+                    background: rgba(239, 219, 219, 1);
+                    font-size: 22px;
+                    font-weight: 400;
+                    width:auto;
+                    border: 1px solid #AB8484;
+                    box-sizing: border-box;
+                    border-radius: 6.79558px;
+                   
+                    }
+            }
+          
+        }
+        .purchase_sidebarPrice{
+            .input_label{
+                margin: 10px auto;
+                color: #AB8484;
+            }
+            .second_section{
+                display: flex;
+                input{
+                    padding: 5px;
+                    border: 1px solid #AB8484;
+                    border-radius: 5px;
+                }
+                .total_second{
+                    margin-left: 20px;
+                    p{
+                        margin: 0;
+                        padding: 0;
+                    }
+                    p:first-child{
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+  
+    
+   
+    
+    
+    
+    
+}

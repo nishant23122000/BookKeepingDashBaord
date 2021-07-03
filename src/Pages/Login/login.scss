@@ -1,0 +1,123 @@
+
+.login{
+    
+
+    .login_header{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      
+        margin: 10px auto;
+        text-align: center;
+        .company_image{
+                img{
+                    width: 60%;
+                }
+        }
+        .company_title{
+            font-size: 40px;
+            color: #715AFF;
+            font-weight: 900;
+            font-family: Roboto;
+        }
+    }
+    
+        .company_body{
+        
+            width:80%;
+            justify-content: space-between;
+            margin: 30px auto;
+            display: flex;
+            padding: 20px;
+            background: #FFFFFF;
+            border: 0.5px solid #AB8484;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 20px;
+            align-items: center;
+    
+    }
+    
+    
+    .company_body_left{
+        width: 60%;
+       
+        padding-top: 30px;
+        .body_left_header{
+        font-weight: 700;    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 59px;
+        color: #715AFF;
+        
+        }
+        .body_left_desc{
+        font-family: Roboto;
+        font-weight: bolder;
+        width: 70%;
+        font-size: 25px;
+        color: #000000;
+        // margin-left: 10px;
+        }
+        ul{
+            font-family: Roboto;
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 20px;
+        line-height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        color: #000000;
+        }
+        
+    }
+    
+   .company_body_right{
+
+        .body_right_header{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 30px;
+            margin: 10px auto;
+            color: #000000;
+    
+    }
+
+    .body_right_input{
+       p{
+           font-size: 20px;
+       }
+       .phone_section{
+           width: 100%;
+           margin: 20px auto;
+           .form-control{
+               width: 100%;
+           }
+       }   
+    }
+    .submit_button{
+        button{
+            background-color: #715AFF;
+            padding: 10px;
+            font-weight: bold;
+            border: #715AFF;
+            color: white;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+  
+   }
+    
+   
+    
+ 
+   
+
+}

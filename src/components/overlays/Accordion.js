@@ -4,11 +4,11 @@ const Accordion = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="accordion"    onClick={() => setIsActive(!isActive)}>
-  
-        <div>{title}</div>
-        {/* <div>{isActive ? '-' : '+'}</div> */}
-  
+    <div style={{ cursor: "pointer" }} className="accordion" onClick={() => setIsActive(!isActive)}>
+
+      <div>{title}</div>
+      {/* <div>{isActive ? '-' : '+'}</div> */}
+
       {isActive && <div className="accordion-content">{content}</div>}
     </div>
   );

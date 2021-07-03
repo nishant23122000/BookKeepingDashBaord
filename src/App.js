@@ -1,29 +1,47 @@
-import React from 'react';
-import Header from "./components/Header"
+import React, { Component } from 'react'
+import Header from "./Layout/Header/Header";
 import "./App.css"
-import Mainbody from './components/Mainbody';
+import Dashboard from './Pages/DashBoard/Dashbaord';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import Help from './components/overlays/Help';
-import Settings from './components/overlays/Settings';
-import AddNewPurchase from './components/overlays/AddNewPurchase';
-import CreateNoteBook from './components/overlays/CreateNoteBook';
-import Login from './components/Login';
-function App() {
-  return (
 
-    <Router>
-      <Switch>
-        <Route path="/login" >
-          <Login />
-        </Route>
-        <Route path="/" >
-          <Header />
-          <Mainbody />
-        </Route>
+import { Provider } from "react-redux";
+import store from "./store/store";
+import Login from './Pages/Login/Login';
+import { get_user_status } from "./store/actions/authAction";
 
-      </Switch>
-    </Router>
-  );
+
+class App extends Component {
+
+
+  componentDidMount() {
+    if (!store.getState().user.isAuth) {
+      store.dispatch(get_user_status())
+    }
+
+  }
+  render() {
+
+    return (
+      <Provider store={store}>
+        <Router>
+          <Switch>
+            <Route path="/login" >
+              <Login />
+            </Route>
+
+            <Route path="/" >
+              <Header />
+
+              <Dashboard />
+            </Route>
+
+          </Switch>
+        </Router>
+      </Provider>
+    )
+  }
 }
+
+
 
 export default App;

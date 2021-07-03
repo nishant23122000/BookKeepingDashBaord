@@ -10,19 +10,18 @@ var firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-export const generateOtp = async (num, captchaRef, setProcess) => {
+export const generateOtp = async (num, captchaRef, cb, showOTP) => {
     try {
-        setProcess(true);
+        cb(true, false, "");
         const recaptch = new firebase.auth.RecaptchaVerifier(captchaRef.current);
-        const number = '+91' + num;
+        const number = num;
         let response = await firebase.auth().signInWithPhoneNumber(number, recaptch);
-        let code = prompt('enter the otp');
-        await response.confirm(code);
-        alert("OTP verified successfully , user logged IN");
-        setProcess(false);
-        window.location.href = "/";
+
+        showOTP(response)
+
+        // cb(false, true, data);
     } catch (error) {
-        setProcess(false);
+        cb(false, false, "");
         console.log(error)
     }
 

@@ -1,0 +1,54 @@
+.mainbody{
+    display:grid;
+    grid-template-columns: 15% 85%;
+    grid-column-gap:0;
+    .books_list{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        // align-items: flex-start;
+        padding:10px;
+      
+        background-color: rgba(40, 39, 45, 1);
+        height:90vh;
+    }
+    .book_section{
+        
+        color: white;
+        list-style: none;
+        text-decoration: none;
+        cursor: pointer;
+        margin: 10px auto;
+        p{
+            margin: 0;
+        }
+        .created_date, .book_name{
+            padding:2px;
+            text-decoration:none;
+        }
+        .created_date{
+            width: 95%;
+            display: flex;
+           
+            justify-content: space-between;
+        }
+    }
+   
+   
+    .create_book{
+        padding:10px;
+        border-radius: 8px;
+        background: rgba(113, 90, 255, 1);
+        width:93%;
+        margin:20px 0px;
+        color:white;
+        text-align: center;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    .active_book_item{
+        background-color: #3B2F5C;
+        
+    }
+}
